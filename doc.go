@@ -4,9 +4,7 @@
 
 // Package srv simplify connecting to services by resolving SRV query and
 // then connect to it in order of priority.
+//
+// A complete list of Service Name and Transport Protocol Port Number is found at:
+// http://www.iana.org/assignments/service-names-port-numbers
 package srv
-
-/*
-A complete list of Service Name and Transport Protocol Port Number is found at:
-http://www.iana.org/assignments/service-names-port-numbers
-*/
