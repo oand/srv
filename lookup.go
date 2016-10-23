@@ -11,7 +11,7 @@ import (
 	"strings"
 )
 
-// Lookup resolves an SRV query of the given protocol and address
+// Lookup resolves a SRV query of the given protocol and address
 //
 // Values for protocol are "tcp" or "udp"
 // address is in the form: domain:service
@@ -31,7 +31,7 @@ func Lookup(protocol, address string) ([]net.Addr, error) {
 	return LookupSRV(s[1], protocol, s[0])
 }
 
-// LookupSRV resolves an SRV query of the given service, protocol, and domain name.
+// LookupSRV resolves a SRV query of the given service, protocol, and domain name.
 // Values for protocol are "tcp" or "udp"
 //
 // LookupSRV constructs the DNS name to look up following RFC 2782.
